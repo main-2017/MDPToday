@@ -12,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" media="(max-width: 544px)" href="css/extra-small-device.css" />
 </head>
 <body>
 	<header id="header" class="header-fixed-top">
@@ -29,7 +30,8 @@
 			</form>
 		</div>
     	<button class="btnz d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3 weather-btn" id="weather">
-    		<img src="img/icons/nubes-w.png" alt="Nublado" class="weather-img"><span class="temp-actual">19&#176;</span><span class="max-min">23&#176;<br>11&#176;</span>
+    		<img src="img/icons/nubes-w.png" alt="Nublado" class="weather-img"><span id="current-temp" class="temp-actual"></span><span class="max-min" id="max-Temp">23&#176;</span>
+    		<span class="max-min" id="min-temp">11&#176;</span>
     	</button>
     </div>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">

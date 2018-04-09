@@ -3,6 +3,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	transition: all .35s;
 }
 
 @font-face {
@@ -41,7 +42,7 @@
 }
 
 #navbarSupportedContent{
-	display: block !important;
+	/* display: block !important; */
 	position: absolute;
 	right: 1%;
 	bottom: 1%;
@@ -98,7 +99,7 @@
 .weather-img{
 	position: absolute;
 	top: 19%;
-	left: 24%;
+	left: 13%;
 }
 
 .temp-actual{
@@ -121,6 +122,10 @@
 	margin-left: 1%;
 	transition: all 0.35s;
 	right: 18%;
+}
+
+#min-temp{
+	top: 40%;
 }
 
 #container{
@@ -188,7 +193,9 @@ label{
 .sponsor-banner{
 	width: 100%;
 	height: 100px;
-	background-color: green;
+	background-image: url('../img/banners/publicidad.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 	margin: 0;
 }
 

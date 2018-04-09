@@ -1,0 +1,15 @@
+#navbarSupportedContent{
+	position: relative;
+	bottom: 0;
+	text-align: center;
+}
+
+.img-logo{
+	height: 37px;
+	margin: 3% -1%;
+}
+
+#container{
+	top: 7%;
+	right: 25%;
+}
