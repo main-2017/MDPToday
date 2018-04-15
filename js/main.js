@@ -47,7 +47,7 @@ $(document).on("scroll", function() {
 
 	if($(document).scrollTop()>100) {
 		$('.weather-btn').css({ "height": "100%"});
-		$('#navbarSupportedContent').css({"right":"20%","bottom":"17%"});
+		$('#navbarSupportedContent').css({"right":"28%","bottom":"17%"});
 		$('.img-logo').attr("src","img/logos/logo-35.png");
 		$('.img-logo').css({"height":"35px","margin":"0% 10%"});
 
