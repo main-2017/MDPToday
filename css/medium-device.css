@@ -1,0 +1,33 @@
+.span-content-inner{
+	text-align: center;
+	width: 100%;
+}
+
+#navbarSupportedContent{
+	position: relative;
+	bottom: 0;
+	text-align: center;
+	right: 0 !important; 
+	bottom: 0 !important;
+}
+
+#container{
+	top: 15px;
+	right: 10%;
+}
+
+.img-logo{
+	height: 35px;
+	margin: 3% 0%;
+}
+
+.news-bottom {
+    height: 300px;
+    border-left: none;
+    border-top: 5px solid #FFF;
+}
+
+.margin-left-side{
+	border-right: none;
+	border-bottom: 5px solid #FFF;
+}

@@ -1,0 +1,32 @@
+.navbar-expand-lg .navbar-nav {
+    margin-right: 14% !important;
+}
+
+.weather-btn{
+	width: 20%;
+}
+
+.weather-img{
+	position: relative;
+	margin-right: 13%;
+	margin-top: -4%;
+}
+
+.temp-actual{
+	margin-right: 29%;
+}
+
+.nav-link{
+	font-size: .8rem;
+}
+
+#container{
+	right: 20%;
+	z-index: 10;
+}
+
+#s:focus{
+  width:3.5em;
+  opacity:1;
+  border-bottom: 1px solid #00B5ED;
+}

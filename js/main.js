@@ -47,16 +47,28 @@ $(document).on("scroll", function() {
 
 	if($(document).scrollTop()>100) {
 		$('.weather-btn').css({ "height": "100%"});
-		$('#navbarSupportedContent').css({"right":"27%","bottom":"17%"});
+		$('#navbarSupportedContent').css({"right":"20%","bottom":"17%"});
 		$('.img-logo').attr("src","img/logos/logo-35.png");
 		$('.img-logo').css({"height":"35px","margin":"0% 10%"});
 
 		
 	} else {
-		$('.weather-btn').css({ "height": "50%"});
-		$('#navbarSupportedContent').css({"right":"1%","bottom":"1%"});
-		$('.img-logo').attr("src","img/logos/logoslogan-08.png");
-		$('.img-logo').css({"height":"60px","margin":"3% 10%"});
+
+        if ($(window).width() < 544) {
+            $('.img-logo').attr("src","img/logos/logo-35.png");
+            $('.img-logo').css({"height":"35px","margin":"0 10%"});
+        }else if(($(window).width() > 544)&&($(window).width() < 768)){
+            $('.img-logo').css({"height":"40px","margin":"0 10%"});
+        }else if(($(window).width() > 768)&&($(window).width() <= 992)){
+            $('.img-logo').css({"height":"35px","margin":"0 10%"});
+        }else{
+    		$('.weather-btn').css({ "height": "50%"});
+    		$('#navbarSupportedContent').css({"right":"1%","bottom":"1%"});
+    		$('.img-logo').attr("src","img/logos/logoslogan-08.png");
+    		$('.img-logo').css({"height":"60px","margin":"3% 10%"});
+        }
+
+
 	}
 	
 });
