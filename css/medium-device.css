@@ -31,3 +31,16 @@
 	border-right: none;
 	border-bottom: 5px solid #FFF;
 }
+
+.social-top-content {
+    text-align: right;
+    position: relative;
+	height: 50px;
+	border: none;
+	margin: 3% 0 0 2%;
+	float: right;
+}
+
+.social-icon.top-social{
+	margin: 0;
+}

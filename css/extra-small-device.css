@@ -11,6 +11,10 @@
 	bottom: 0 !important;
 }
 
+.nav-item{
+	margin: 3% 5%;
+}
+
 .img-logo{
 	height: 37px;
 	margin: 3% -1%;
@@ -19,6 +23,10 @@
 #container{
 	top: 13px;
 	right: 23%;
+}
+
+.section-icon {
+   display: none;
 }
 
 .img-logo{
@@ -32,6 +40,19 @@
 
 .section-title{
 	font-size: 1em;
+	text-align: center;
+	clear: both;
+}
+
+.sponsor-banner {
+    margin: 70px 0 0 0;
+    background-size: contain;
+    height: 50px;
+}
+
+.social-top-content {
+    margin-left: 0;
+    text-align: center;
 }
 
 .margin-blank{
