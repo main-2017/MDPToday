@@ -36,6 +36,12 @@ $(document).ready(function(){
     }
 });
 
+$(document).ready(function(){
+    var ancho = $(window).width();
+    var alto = $(window).height();
+    console.log("Alto de ventana: " + alto + "px, Ancho: " + ancho + "px");
+});
+
 
 });
 	var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre`");
