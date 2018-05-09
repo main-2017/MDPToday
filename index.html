@@ -10,8 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" media="(max-width: 544px)" href="css/extra-small-device.css"/>
     <link rel="stylesheet" media="(min-width: 545px) and (max-width: 767px)" href="css/small-device.css"/>
@@ -22,7 +21,7 @@
 	<header id="header" class="header-fixed-top">
 		<nav class="navbar navbar-expand-lg navbar-light bg-color-white">
   			<a class="navbar-brand" href="#"><img class="img-logo" src="img/logos/logoslogan-08.png" alt="MDP Today"></a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:none;">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 		<div id="container">
@@ -34,17 +33,28 @@
 			</form>
 		</div>
     	<button class="btnz d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3 weather-btn" id="weather">
-    		<img src="img/icons/nubes-w.png" alt="Nublado" class="weather-img"><span id="current-temp" class="temp-actual"></span><span class="max-min" id="max-Temp">23&#176;</span>
-    		<span class="max-min" id="min-temp">11&#176;</span>
+    		<img id="weather-icon" src="" alt="Sin conexion" class="weather-img"><span id="current-temp" class="temp-actual"></span><span class="max-min" id="max-Temp"></span>
+    		<span class="max-min" id="min-temp"></span>
     	</button>
     </div>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  	<div id="hidden-lg-bar" class="row container-bar">
+  		<div class="medium-bar">
+  			<img src="img/weather/cloudy-w.png" alt="Nublado" class="weather-img-mobile"><span id="current-temp-mobile" class="temp-actual-mobile"></span><span class="max-min" id="max-Temp">23&#176;</span>
+    		<span class="max-min" id="min-temp">11&#176;</span>
+  		</div>
+  		<div class="medium-bar">
+  			<a href="#" title="Dale Me Gusta a nuestra Fan Page de Facebook"><p class="social-icon top-social-mobile">F</p></a>
+			<a href="#" title="Seguinos en Twitter"><p class="social-icon top-social-mobile">T</p></a>
+			<a href="#" title="Sumate a nuestro Instagram"><p class="social-icon top-social-mobile">I</p></a>
+  		</div>
+  	</div>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#"><img src="img/icons/home-b.png" class="icon-btn">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#outstanding-news"><img src="img/icons/notiias-b.png" class="icon-btn">Destacadas</a>
+        <a class="nav-link" href="#news"><img src="img/icons/noticias-b.png" class="icon-btn">Noticias</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#sports"><img src="img/icons/deportes-b.png" class="icon-btn">Deportes</a>
@@ -59,18 +69,19 @@
   </div>
 </nav>
 	</header><!-- /header -->
-	<section class="container-fluid" id="outstanding-news">
-		<div class="row sponsor-banner">
+		<div class="row sponsor-banner d-none d-md-block" style="margin: 90px 0 10px 0;">
+			<img class="img-responsive" src="img/banners/publicidad-desktop.png" alt="Publicidad">
 		</div>
-		<div class="row span-content">
+	<section class="container" id="outstanding-news">
+		<div class="row span-content d-none d-md-block">
 			<h4 class="span-content-inner" id="dateField"></h4>
 		</div>
-	<div class="row">
-			<div class="section-title-content col-lg-4 col-md-6 col-sm-10">
-			<img class="section-icon" src="img/icons/noticias-destacadas-w.png" alt="Noticias Destacadas">
-			<h2 class="section-title">Noticias Destacadas</h2>
-		</div>
-		<div class="social-top-content col-lg-2 col-md-5 col-sm-12"">
+		<div class="row initial d-none d-sm-block">
+			<div class="section-title-content min-top col-lg-4 col-md-12 col-sm-12" id="outstanding-news-title">
+				<img class="section-icon" src="img/icons/noticias-destacadas-w.png" alt="Noticias Destacadas">
+				<h2 class="section-title">Noticias Destacadas</h2>
+			</div>
+		<div class="social-top-content col-lg-2 d-md-none d-xs-none d-sm-none">
 			<a href="#" title="Dale Me Gusta a nuestra Fan Page de Facebook"><p class="social-icon top-social">F</p></a>
 			<a href="#" title="Seguinos en Twitter"><p class="social-icon top-social">T</p></a>
 			<a href="#" title="Sumate a nuestro Instagram"><p class="social-icon top-social">I</p></a>
@@ -78,6 +89,7 @@
 	</div>
 		<div class="row news-content">
 			<article class="col-lg-8 col-md-8 col-sm-12 article-content">
+				<h4 class="span-content-inner d-none d-block d-sm-none" id="dateFieldSmall"></h4>
 			</article>
 			<div class="col-lg-4 col-md-4 col-sm-12 article-content margin-blank">
 				<article class="forced-news">
@@ -96,18 +108,19 @@
 			</article>
 		</div>
 	</section>
-	<section class="container-fluid" id="sports">
 		<div class="row sponsor-banner">
+			<img class="img-responsive" src="img/banners/publicidad-desktop.png" alt="Publicidad">
 		</div>
-		<div class="row">
-			<div class="section-title-content col-lg-10 col-md-8 col-sm-10">
-				<img src="img/icons/deportes-w.png" alt="Deportes" class="section-icon">
-				<h2 class="section-title">Deportes</h2>
+		<section class="container" id="news">
+		<div class="row initial">
+			<div class="section-title-content min-top col-lg-10 col-md-8 col-sm-12">
+				<img src="img/icons/noticias-w.png" alt="Deportes" class="section-icon">
+				<h2 class="section-title">Noticias</h2>
 			</div>
 			<button type="button" class="col-lg-1 col-md-3 col-sm-2 btn-seemore">Ver más</button>	
 		</div>
 		<div class="row">
-			<div class="slider-news" id="slider-news">
+			<div class="slider-news" id="slider-news-news">
 				
 					<a href="#" class="arrow-circle" style="left:0;">
 							<i class="material-icons arrows">keyboard_arrow_left</i>
@@ -133,11 +146,50 @@
 		</div>
 		
 	</section>
-	<section class="container-fluid" id="tecnology">
 		<div class="row sponsor-banner">
+			<img class="img-responsive" src="img/banners/publicidad-desktop.png" alt="Publicidad">
+		</div>
+	<section class="container" id="sports">
+		<div class="row initial">
+			<div class="section-title-content min-top col-lg-10 col-md-8 col-sm-12">
+				<img src="img/icons/deportes-w.png" alt="Deportes" class="section-icon">
+				<h2 class="section-title">Deportes</h2>
+			</div>
+			<button type="button" class="col-lg-1 col-md-3 col-sm-2 btn-seemore">Ver más</button>	
 		</div>
 		<div class="row">
-			<div class="section-title-content col-lg-10 col-md-8 col-sm-10">
+			<div class="slider-news" id="slider-news-sports">
+				
+					<a href="#" class="arrow-circle" style="left:0;">
+							<i class="material-icons arrows">keyboard_arrow_left</i>
+						</a>
+					<a href="#" class="arrow-circle" style="right:0;">
+							<i class="material-icons arrows">keyboard_arrow_right</i>
+						</a>
+
+				<div class="col-lg-4 col-md-12 col-sm-12 article-content margin-left-side">
+					<article class="article-left">
+						
+					</article>
+					<article class="article-left">
+						
+					</article>
+				</div>
+
+				<div class="col-lg-8 col-md-12 col-sm-12 article-content floater">
+
+				</div>
+
+			</div>
+		</div>
+		
+	</section>
+		<div class="row sponsor-banner">
+			<img class="img-responsive" src="img/banners/publicidad-desktop.png" alt="Publicidad">
+		</div>
+	<section class="container" id="tecnology">
+		<div class="row initial">
+			<div class="section-title-content min-top col-lg-10 col-md-8 col-sm-12">
 				<img src="img/icons/tecnologia-w.png" alt="Tecnologia" class="section-icon">
 				<h2 class="section-title">Tecnología</h2>
 			</div>
@@ -153,11 +205,12 @@
 		</div>
 		
 	</section>
-		<section class="container-fluid" id="entertainment">
 			<div class="row sponsor-banner">
+				<img class="img-responsive" src="img/banners/publicidad-desktop.png" alt="Publicidad">
 			</div>
-			<div class="row">
-				<div class="section-title-content col-lg-10 col-md-8 col-sm-10">
+		<section class="container" id="entertainment">
+			<div class="row initial">
+				<div class="section-title-content min-top col-lg-10 col-md-8 col-sm-12">
 					<img src="img/icons/entretenimiento-w.png" alt="Entretenimiento" class="section-icon">
 					<h2 class="section-title">Entretenimiento</h2>
 				</div>
@@ -171,21 +224,7 @@
 					</article>
 				</div>
 			</div>
-			<div class="row news-content news-thin-row">
-				<article class="col-lg-3 col-md-12 col-sm-12 article-content news-bottom">
-					
-				</article>
-				<article class="col-lg-3 col-md-12 col-sm-12 article-content news-bottom">
-					
-				</article>
-				<article class="col-lg-3 col-md-12 col-sm-12 article-content news-bottom">
-					
-				</article>
-				<article class="col-lg-3 col-md-12 col-sm-12 article-content news-bottom">
-					
-				</article>
-			</div>
-		</section>
+	</section>
 		<footer>
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-12 social-row">
