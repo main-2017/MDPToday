@@ -106,3 +106,9 @@
 .temp-actual-mobile{
 	left: 18%;
 }
+
+.navbar-expand-lg .navbar-nav {
+    margin-right: 3% !important;
+    margin-top: 0;
+    text-align: left;
+}

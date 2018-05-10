@@ -31,9 +31,6 @@
 }
 
 #container{
-	/* top: 15px;
-	right: 13%; */
-	top: 3px;
 	right: 8%;
 }
 
@@ -101,6 +98,7 @@
 
 .social-row{
 	padding-left: 0;
+	padding-right: 0;
 	text-align: center;
 }
 
@@ -135,7 +133,7 @@
 	top: 23%;
 	margin-left: 1%;
 	transition: all 0.35s;
-	right: 68%;
+	right: 76%;
 }
 
 #min-temp{
@@ -147,4 +145,14 @@
     height: 30px;
     margin: 10px 0;
     left: -21%;
+}
+
+.navbar-expand-lg .navbar-nav {
+    margin-left: 3% !important;
+    margin-top: 8%;
+    text-align: left;
+}
+
+.temp-actual-mobile {
+    left: 18%;
 }
